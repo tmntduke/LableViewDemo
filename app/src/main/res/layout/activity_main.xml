@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tmnt.example.lableviewdemo.LabelView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/label"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    app:labelMargin="5dp"
+    app:labelPadding="5dp"
+    app:textColor="@color/colorAccent"
+    app:textSize="6sp"
+></tmnt.example.lableviewdemo.LabelView>
