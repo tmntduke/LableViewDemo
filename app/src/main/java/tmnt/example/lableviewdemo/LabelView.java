@@ -79,7 +79,6 @@ public class LabelView extends ViewGroup {
                 maxItemHeight += view.getMeasuredHeight();
                 currWidth = 0;
                 begin = true;
-
             }
             maxItemHeight = Math.max(maxItemHeight, view.getMeasuredHeight());
             if (!begin) {

@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mLabelView= (LabelView) findViewById(R.id.label);
+        mLabelView = (LabelView) findViewById(R.id.label);
         mLabelView.setLabelBackgroundResource(R.drawable.label_back);
         List<String> list = new ArrayList<>();
         list.add("Android");
@@ -33,12 +33,9 @@ public class MainActivity extends AppCompatActivity {
 
         mLabelView.setLable(list);
 
-        mLabelView.setOnLabelListener(new LabelView.OnLabelListener() {
-            @Override
-            public void labelClick(View view, int position) {
-                Toast.makeText(MainActivity.this, "click:"+position, Toast.LENGTH_SHORT).show();
-            }
-        });
+        mLabelView.setOnLabelListener((v, position) ->
+                Toast.makeText(MainActivity.this, "click:" + position, Toast.LENGTH_SHORT).show()
+        );
 
     }
 }
